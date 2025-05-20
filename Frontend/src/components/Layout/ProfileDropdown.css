@@ -1,0 +1,143 @@
+.profile-dropdown {
+  position: absolute;
+  top: 55px; /* Adjust based on navbar height and desired spacing */
+  right: 0;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  z-index: 1000;
+  padding: 0;
+  overflow: hidden; /* Ensures children respect border-radius */
+}
+
+.dropdown-header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #f8f9fa; /* Light header background */
+}
+
+.dropdown-header .profile-pic { /* Re-style if needed, or use existing */
+  width: 40px;
+  height: 40px;
+  font-size: 1.2em;
+  margin-right: 12px;
+}
+
+.dropdown-header-info .name {
+  font-weight: bold;
+  font-size: 1em;
+  color: #333;
+}
+.dropdown-header-info .role {
+  font-size: 0.8em;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.dropdown-section {
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.dropdown-section:last-child {
+  border-bottom: none;
+}
+
+.dropdown-section-title {
+  font-size: 0.75em;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.toggle-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 0.9em;
+}
+.toggle-item:last-child {
+  margin-bottom: 0;
+}
+
+.toggle-item label {
+  color: #444;
+}
+
+/* Basic toggle switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px; /* Reduced width */
+  height: 20px; /* Reduced height */
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+ }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px; /* Adjusted for new height */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px; /* Adjusted size */
+  width: 16px;  /* Adjusted size */
+  left: 2px;    /* Adjusted position */
+  bottom: 2px;  /* Adjusted position */
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #28a745; /* Green for enabled */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #28a745;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px); /* Adjusted translation */
+}
+
+.privileges-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.privileges-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 0.9em;
+}
+
+.privileges-list li a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.privileges-list li a:hover {
+  text-decoration: underline;
+}

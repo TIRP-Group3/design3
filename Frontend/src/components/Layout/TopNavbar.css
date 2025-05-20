@@ -1,0 +1,84 @@
+.top-navbar {
+  background-color: #ffffff; /* White background */
+  color: #333;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.top-navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.top-navbar-left .nav-item {
+  padding: 0 15px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #555;
+}
+
+.top-navbar-left .nav-item.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+.top-navbar-center .search-bar {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 250px;
+  font-size: 0.9em;
+}
+
+.top-navbar-right {
+  display: flex;
+  align-items: center;
+  position: relative; /* For dropdown positioning */
+}
+
+.notification-icon {
+  font-size: 1.5em; /* Placeholder, use an actual icon */
+  margin-right: 20px;
+  cursor: pointer;
+  color: #555;
+  position: relative;
+}
+.notification-icon .indicator {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #007bff; /* Default blue */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.profile-name {
+  font-weight: 500;
+  color: #333;
+}

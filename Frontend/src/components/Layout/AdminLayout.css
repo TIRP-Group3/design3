@@ -1,0 +1,19 @@
+.admin-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden; /* Prevent double scrollbars if content overflows */
+}
+
+.admin-layout-main {
+  display: flex;
+  flex-grow: 1; /* Takes remaining height */
+  overflow: hidden; /* Important for sidebar and content scrolling */
+}
+
+.admin-layout-content {
+  flex-grow: 1;
+  padding: 25px;
+  overflow-y: auto; /* Allow content area to scroll */
+  background-color: #f4f6f8; /* Light grey background for content */
+}

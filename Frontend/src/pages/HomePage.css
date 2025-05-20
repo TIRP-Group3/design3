@@ -1,0 +1,77 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh; /* Adjusted to ensure footer is visible */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.home-header {
+  margin-bottom: 40px;
+}
+
+.home-header h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.home-main-content h2 {
+  font-size: 1.8em;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.dashboard-options {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  justify-content: center;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.dashboard-button {
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: white;
+  min-width: 200px; /* Ensure buttons have a decent width */
+}
+
+.admin-button {
+  background-color: #007bff; /* Blue */
+}
+
+.admin-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.user-button {
+  background-color: #28a745; /* Green */
+}
+
+.user-button:hover {
+  background-color: #1e7e34;
+  transform: translateY(-2px);
+}
+
+.home-footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  width: 100%;
+  font-size: 0.9em;
+  color: #777;
+}
