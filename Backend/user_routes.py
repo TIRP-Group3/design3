@@ -6,9 +6,8 @@ import numpy as np # Make sure numpy is imported
 import os
 import shutil
 import datetime # Required for ScanHistory and ActivityLog timestamps
-
-from . import crud, models, schemas, ml_utils # Relative imports for other backend modules
-from .database import SessionLocal # For DB session
+import crud, models, schemas, ml_utils # Relative imports for other backend modules
+from database import SessionLocal # For DB session
 
 # Define a default test user ID for now, assuming admin is 1.
 # In a real app with auth, this would come from the authenticated user.

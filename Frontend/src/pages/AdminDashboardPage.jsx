@@ -19,6 +19,8 @@ const AdminDashboardPage = () => {
     setError('');
     try {
       const data = await getDatasets();
+      
+      console.log('Fetched datasets:', data); // Add this line
       setDatasets(data);
     } catch (err) {
       setError(err.message || 'Failed to fetch datasets');

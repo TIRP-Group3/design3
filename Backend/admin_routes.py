@@ -6,8 +6,8 @@ import os
 import shutil
 import datetime # Make sure datetime is imported if not already via other modules
 
-from . import crud, models, schemas, ml_utils
-from .database import SessionLocal
+import crud, models, schemas, ml_utils
+from database import SessionLocal
 
 DEFAULT_ADMIN_OWNER_ID = 1 # Assuming User ID 1 is the designated admin
 

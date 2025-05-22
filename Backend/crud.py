@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from typing import Optional, List, Dict, Any 
-from . import models, schemas
+import models, schemas
 
 
 # User CRUD operations (no changes from previous simplified version)

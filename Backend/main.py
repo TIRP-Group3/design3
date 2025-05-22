@@ -2,12 +2,12 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 # Import database components
-from .database import engine, Base # SQLALCHEMY_DATABASE_URL, SessionLocal were also in database.py
-from . import models # This ensures models are registered with Base
+from database import engine, Base # SQLALCHEMY_DATABASE_URL, SessionLocal were also in database.py
+import models # This ensures models are registered with Base
 
 # Import routers
-from .admin_routes import router as admin_router
-from .user_routes import router as user_router 
+from admin_routes import router as admin_router
+from user_routes import router as user_router 
 
 
 # Create all database tables
@@ -30,10 +30,8 @@ app = FastAPI(
 # This is important to allow your React frontend (running on a different port)
 # to communicate with the FastAPI backend.
 origins = [
-    "http://localhost",         # Common for local development
-    "http://localhost:3000",    # Default React development server port
-    "http://localhost:8000",    # Default FastAPI/uvicorn port (though app runs here)
-    # Add other origins if your frontend is served from elsewhere
+    "http://localhost:5175",  # Vite or React dev server
+    "http://127.0.0.1:5175",  # Add this too if needed
 ]
 
 app.add_middleware(
